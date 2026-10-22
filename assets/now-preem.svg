@@ -7,10 +7,8 @@
 .p{font:400 19px IS,ui-sans-serif,sans-serif;fill:#B3B2AA}
 .live{font:400 13px MM,ui-monospace,monospace;letter-spacing:.14em;fill:#ECEBE5;text-transform:uppercase}
 .dot{animation:dot 2.4s ease-in-out infinite}
-.fly{animation:fly 6s cubic-bezier(.55,0,.2,1) 1s infinite}
 @keyframes dot{0%,100%{opacity:1}50%{opacity:.35}}
-@keyframes fly{0%{transform:translate(-420px,0);opacity:0}6%{opacity:1}32%{transform:translate(1500px,0);opacity:1}33%,100%{transform:translate(1500px,0);opacity:0}}
-@media (prefers-reduced-motion:reduce){.dot,.fly{animation:none}.fly{opacity:0}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
 </style>
 <defs><filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
 <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" seed="7" result="nz"/>
@@ -20,12 +18,9 @@
 <feColorMatrix type="matrix" values="0 0 0 0 0.925  0 0 0 0 0.922  0 0 0 0 0.898  0 0 0 .55 0"/></filter>
 <filter id="film" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 -.35"/></filter>
 <radialGradient id="g2" cx="27%" cy="52%" r="34%"><stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-<linearGradient id="tail2" x1="0" x2="1"><stop offset="0" stop-color="#ECEBE5" stop-opacity="0"/><stop offset="1" stop-color="#ECEBE5" stop-opacity=".9"/></linearGradient>
 </defs>
 <rect width="1280" height="360" fill="#0A0A09"/><rect x="20.5" y="20.5" width="1239" height="319" fill="none" stroke="#1D1D1A"/><path d="M14.5 20.5H26.5M20.5 14.5V26.5" stroke="#3A3A33" stroke-width="1"/><path d="M14.5 339.5H26.5M20.5 333.5V345.5" stroke="#3A3A33" stroke-width="1"/><path d="M1253.5 20.5H1265.5M1259.5 14.5V26.5" stroke="#3A3A33" stroke-width="1"/><path d="M1253.5 339.5H1265.5M1259.5 333.5V345.5" stroke="#3A3A33" stroke-width="1"/><rect width="1280" height="360" filter="url(#film)" opacity=".05"/>
 <rect x="0" y="0" width="1280" height="360" fill="url(#g2)" filter="url(#grain)"/>
-<!-- étoile filante qui traverse la carte de temps en temps -->
-<g class="fly"><rect x="0" y="64" width="300" height="1.4" fill="url(#tail2)"/><path d="M931.0 324.1C1145.5 319.6 1201.0 316.9 1321.0 315.9C1431.0 315.0 1528.0 279.5 1407.0 72.0C1528.0 279.5 1597.2 319.8 1840.0 324.0C1597.2 319.8 1564.8 348.6 1637.0 504.0C1564.8 348.6 1431.0 325.0 1321.0 325.9C1201.1 326.9 1145.5 325.1 931.0 324.1Z" transform="translate(278 47) scale(.045) translate(-917 0)" fill="#ECEBE5"/></g>
 <svg x="70" y="112" width="560" height="166" viewBox="-20 -20 1900 560"><g fill="#EEECE4" color="#EEECE4"><path d="M220.00 120.00A100 100 0 0 1 20.00 120.00" fill="none" stroke="currentColor" stroke-width="40"/><path d="M20.00 120.00A100 100 0 0 1 220.00 120.00" fill="none" stroke="currentColor" stroke-width="40"/><rect  x="-0.5" y="115.5" width="41" height="245"/><rect class="px" x="-0.5" y="-0.5" width="41" height="41"/><rect  x="279.5" y="39.5" width="41" height="201"/><rect class="px" x="319.5" y="-0.5" width="81" height="41"/><path d="M556.00 220.00A100 100 0 1 1 656.00 120.00" fill="none" stroke="currentColor" stroke-width="40"/><rect  x="455.5" y="99.5" width="221" height="41"/><rect  x="554.7" y="199.5" width="61" height="41"/><rect class="px" x="615.5" y="159.5" width="41" height="41"/><path d="M832.00 220.00A100 100 0 1 1 932.00 120.00" fill="none" stroke="currentColor" stroke-width="40"/><rect  x="731.4999999999999" y="99.5" width="221" height="41"/><rect  x="830.6999999999999" y="199.5" width="61" height="41"/><rect class="px" x="891.4999999999999" y="159.5" width="41" height="41"/><rect  x="991.4999999999999" y="95.5" width="41" height="145"/><path d="M1012.00 100.00A80 80 0 0 1 1172.00 100.00" fill="none" stroke="currentColor" stroke-width="40"/><rect  x="1151.5" y="39.5" width="41" height="201"/><rect class="px" x="1191.5" y="-0.5" width="61" height="41"/><path d="M1252.00 20.00A80 80 0 0 1 1332.00 100.00" fill="none" stroke="currentColor" stroke-width="40"/><rect  x="1311.5" y="95.5" width="41" height="145"/></g><path d="M451.0 328.0C929.5 321.3 1201.0 316.9 1321.0 315.9C1431.0 315.0 1528.0 279.5 1407.0 72.0C1528.0 279.5 1597.2 319.8 1840.0 324.0C1597.2 319.8 1564.8 348.6 1637.0 504.0C1564.8 348.6 1431.0 325.0 1321.0 325.9C1201.1 326.9 929.5 326.8 451.0 328.0Z" fill="#EEECE4"/></svg>
 <line x1="660.5" x2="660.5" y1="21" y2="339" stroke="#1D1D1A"/>
 <text class="lab" x="704" y="96">now building</text>
