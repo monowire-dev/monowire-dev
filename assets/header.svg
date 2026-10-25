@@ -35,7 +35,7 @@
 <g class="late2"><rect x="-200" y="271" width="200" height="2" fill="url(#tail)"><animate attributeName="x" from="-200" to="1280" begin="2.4s;pulse.end+3.2s" dur="2.6s" id="pulse" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .25 1"/></rect></g>
 <text class="tag late" x="640.0" y="320" text-anchor="middle">Invisible line. Clean cut.</text>
 <g class="late"><text class="lab" x="48" y="58">monowire · product builder</text>
-<text class="lab" x="1232" y="58" text-anchor="end">now building · preem</text>
+<text class="lab" x="1232" y="58" text-anchor="end">now building · patchwire, preem</text>
 <text class="lab" x="48" y="376">name → brand → code → ship</text>
 <text class="lab" x="1232" y="376" text-anchor="end">monowire.dev</text></g>
 </svg>

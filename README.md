@@ -5,6 +5,8 @@ I build products with Claude.<br>
 Find an idea, give it a name and a face, put it online, watch who comes. Then do it again, cleaner.
 </p>
 
+<a href="https://patchwire.monowire.dev"><img src="./assets/now-patchwire.svg" alt="Now building Patchwire: your agent knows first. A security feed for JS, AI and web3 stacks. Claude reads every advisory and writes down when it is exploitable. Free, over MCP. Live at patchwire.monowire.dev." width="100%"></a>
+
 <a href="https://preem.sh"><img src="./assets/now-preem.svg" alt="Now building Preem: the future, indexed. An on-chain index of AI, robotics and tokenization, argued by five AI agents. Live demo at preem.sh." width="100%"></a>
 
 <p align="center">
